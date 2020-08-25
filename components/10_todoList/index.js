@@ -30,8 +30,8 @@ export default class Demo extends Component {
 				</View>
 				<View style={bottom}>
 					{
-						this.state.todos.map((todo)=>{
-							return <Text style={todoStyle}>{todo}</Text>
+						this.state.todos.map((todo,index)=>{
+							return <Text key={index} style={todoStyle}>{todo}</Text>
 						})
 					}
 				</View>
